@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+  }
+  .container {
+    margin-left: 5vw;
+    margin-top: 5vh;
+    height: 90vh;
+    width: 90vw;
+    /* border: solid; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .testimonials{
+      border-radius: 10px;
+      margin: 20px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+  .desc-dark{
+      opacity: 0.5;
+      font-size: 13px;
+      line-height: 1.5;
+  }
+  .desc-light{
+      font-size: 13px;
+      line-height: 1.5;
+  }
+  .profile>img{
+      float: left;
+      height: 35px;
+      border-radius: 50%;
+      border: solid white;
+      margin-right: 20px;
+  }
+  .title{
+      font-weight: 600;
+      font-size: 1.5rem;
+  }
+  #testi1 {
+      color: white;
+    grid-column: 1 / span 2;
+    background: url('../images/bg-pattern-quotation.svg') no-repeat 80% 0;
+    background-color: hsl(263, 55%, 52%);
+  }
+  #testi2 {
+
+      color: white;
+    background-color: hsl(217, 19%, 35%);
+  }
+  #testi3 {
+      color: hsl(217, 19%, 35%);
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    background-color: hsl(0, 0%, 100%);
+  }
+  #testi4 {
+    color: hsl(217, 19%, 35%);
+    background-color: hsl(0, 0%, 100%);
+  }
+  #testi5 {
+      color: white;
+    grid-column: 2 / span 2;
+    background-color: hsl(219, 29%, 14%);
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      margin-left: 5vw;
+      margin-top: 5vh;
+      min-height: 2300px;
+      width: 90vw;
+      /* border: solid; */
+      display: grid;
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-columns: 1fr;
+    }
+    #testi1 {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      /* background-color: blueviolet; */
+    }
+    #testi2 {
+      grid-column: 1;
+      grid-row: 3;
+      /* background-color: indianred; */
+    }
+    #testi3 {
+      grid-column: 1;
+      grid-row: 5 / span 2;
+      /* background-color: lightsalmon; */
+    }
+    #testi4 {
+      grid-column: 1;
+      grid-row: 4;
+      /* background-color: maroon; */
+    }
+    #testi5 {
+      grid-column: 1;
+      grid-row: 7 / span 2;
+      /* background-color: midnightblue; */
+    }
+  }
